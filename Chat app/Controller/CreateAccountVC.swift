@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  CreateAccountVC.swift
 //  Chat app
 //
 //  Created by Simon Abraham A. on 30/01/2018.
@@ -8,20 +8,16 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class CreateAccountVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func createAccountBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
-    }
-    @IBAction func closePressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
+    @IBAction func closePressed(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND, sender: nil)
+    }
     
 }
